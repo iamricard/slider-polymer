@@ -1,0 +1,22 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<polymer-element name="slider-component">
+  <template>
+    <link rel="stylesheet" href="style.css">
+
+    <div id="container">
+      <div data-img="left" on-click="{{ slide }}" class="controls" id="left"><</div>
+      <div data-img="right" on-click="{{ slide }}" class="controls" id="right">></div>
+
+      <ul id="bullets" class="controls">
+        <template repeat="{{ image, index in images }}">
+          <li>
+            <a on-click="{{ slide }}" class="bullet" data-img="{{ index }}" href="javascript:;"></a>
+          </li>
+        </template>
+      </ul>
+    </div>
+
+  </template>
+  <script type="text/javascript" src="main.js"></script>
+</polymer-element>

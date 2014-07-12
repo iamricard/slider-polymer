@@ -1,0 +1,44 @@
+#container {
+  position:relative;
+  height: 500px;
+  width: 1200px;
+}
+
+#left { left: 0; }
+#right { right: 0; }
+#bullets {
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0;
+}
+
+#bullets li { display: inline-block; }
+.bullet {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+}
+
+.controls {
+  z-index: 2;
+  position: absolute;
+  background-color: blue;
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position:absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.show { opacity: 100 !important; }
