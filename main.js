@@ -45,6 +45,12 @@
           this.images[this.current].classList.add('show');
           break;
       }
+
+      this.applyAccent();
+    },
+
+    applyAccent: function() {
+      //
     }
   });
 
