@@ -15,7 +15,8 @@
   width: 7.5%;
 }
 
-#left:hover, #right:hover { background-color: rgba(255, 255, 255, .6); }
+.accent { opacity: .2; background-color: rgba(255, 255, 255, 1); }
+.accent:hover { opacity: .8; }
 
 #bullets {
   text-align: center;
@@ -34,23 +35,17 @@
   display: inline-block;
   width: .9rem;
   height: .9rem;
-  background-color: rgba(255, 255, 255, .5);
   border-radius: 50%;
 }
 
-.bullet:hover { background-color: rgba(255, 255, 255, 1); }
-
 .controls {
   z-index: 2;
-  border: 1px solid rgba(255, 255, 255, .2);
   position: absolute;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-
-.controls:hover { border-color: rgba(255, 255, 255, .4); }
 
 .slider-img {
   width: 100%;
