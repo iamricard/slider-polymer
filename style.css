@@ -50,13 +50,17 @@
 .slider-img {
   width: 100%;
   height: 100%;
-  opacity: 0;
   position: absolute;
   left: 0;
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
+  -webkit-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
 }
 
-.show { opacity: 100 !important; }
+.left-slider {
+  left: -20000px;
+}
+
+.right-slider {
+  left: 20000px;
+}
